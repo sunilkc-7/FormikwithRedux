@@ -1,0 +1,67 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+<div className="form-field">
+            <label htmlFor="name">Name:</label>
+            <Field name="name" type="text" />
+            <ErrorMessage
+              name="name"
+              component="div"
+              className="error-message"
+            />
+          </div>
+          <div className="form-field">
+            <label htmlFor="email">Email:</label>
+            <MyInputField name="email" />
+
+            <ErrorMessage
+              name="email"
+              component="div"
+              className="error-message"
+            />
+          </div>
+          <div className="form-field">
+            <label htmlFor="DOB">Date of Birth:</label>
+            <Field name="DOB" type="date" />
+            <ErrorMessage
+              name="DOB"
+              component="div"
+              className="error-message"
+            />
+          </div>
